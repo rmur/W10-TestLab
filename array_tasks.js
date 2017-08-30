@@ -5,7 +5,8 @@ var arrayTasks = {
 	},
 
 	insertAt: function (arr, itemToAdd, index) {
-		return arr.splice(itemToAdd,index);
+		arr.splice(index, 0, itemToAdd);
+		return arr;
 	},
 
 	// square: function (arr) {
