@@ -15,9 +15,11 @@ var arrayTasks = {
 		});
 	},
 
-	// sum: function (arr) {
-		
-	// },
+	sum: function (arr) {
+		return arr.reduce( function(summAccumulator, value){
+			return summAccumulator + value;
+		}, 0)
+	},
 
 	// findDuplicates: function (arr) {
 		
