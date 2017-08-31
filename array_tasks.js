@@ -51,9 +51,26 @@ var arrayTasks = {
 	},
 
 	sumOfAllEvenNumbersSquared: function (arr) {
-		return arr.reduce( function(summAccumulator, anotherFunction()){
-			return summAccumulator + (squaredValue*squaredValue);
+		// newArr = [];
+		// for (var i=0 ; i<arr.length; i++){
+		// 	if (arr[i]/2 % 0){
+		// 		newArr.push(arr[i])
+		// 	}
+		// 	return newArr
+		// }	
+
+		// return newArr.reduce( function(summAccumulator, squaredValue){
+		// 	return summAccumulator + (squaredValue*squaredValue);
+		// })
+
+		sum = 0;
+		arr.forEach(function(element){
+			if (element % 2 ==0){
+				sum += element **2
+			}
 		})
+		return sum;
+
 	}
 
 }
