@@ -27,6 +27,7 @@ var arrayTasks = {
 			for(var g = 0 ; g <arr.length ; g++){
 				if (arr[i] == arr[g] && i != g && !newArr.includes(arr[i])){
 					newArr.push(arr[i]);
+					break;
 				}
 			}
 		}
@@ -49,9 +50,11 @@ var arrayTasks = {
 		return indexes;
 	},
 
-	// sumOfAllEvenNumbersSquared: function (arr) {
-		
-	// }
+	sumOfAllEvenNumbersSquared: function (arr) {
+		return arr.reduce( function(summAccumulator, anotherFunction()){
+			return summAccumulator + (squaredValue*squaredValue);
+		})
+	}
 
 }
 
